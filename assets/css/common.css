@@ -30,6 +30,9 @@ body {
 }
 
 /* 버튼 Button */
+button {
+    font-family: 'Pretendard';
+}
 
 /* 인풋 Input(
 	3-1.일반 텍스트 입력
@@ -43,12 +46,157 @@ body {
 ) */
 
 /* 드롭다운 Select */
+.select-box {
+    position: relative;
+    width: 100%;
+    cursor: pointer;
+}
+
+.select-box .select-item {
+    position: relative; 
+    width: 100%; 
+    height: 36px; 
+    padding: 0 12px; 
+    color: #7E859C;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: left; 
+    border-radius: 4px;
+    border: 1px solid black;
+    background: white;
+    overflow: hidden; 
+    white-space: nowrap; 
+    text-overflow: ellipsis; 
+    word-break: break-all; 
+    z-index: 1;
+}
+
+.select-box .select-item::after {
+    position: absolute; 
+    right: 12px;
+    top: 50%; 
+    transform: translateY(-50%); 
+    content: '';
+    width: 20px; 
+    height: 20px; 
+    transform: translateY(-50%) rotate(180deg);
+    /* background: var(--icon_default_arrow) center/20px; */
+    transition: all 0.25s;
+}
+
+.select-box .select-item.on::after {
+    top: 50%; 
+    transform: translateY(-50%) rotate(360deg);
+}
+
+.select-box .option-list {
+    width: 100%;
+    height: 183px;
+    position: absolute;
+    top: 42px;
+    left: 0;
+    border-radius: 4px;
+    border: 1px solid black;
+    background: white;
+    overflow-x: hidden;
+    overflow-y: auto;
+    display: none;
+    /* box-shadow: 0px 2px 4px 0px var(--color_shadow); */
+    z-index: 2;
+}
+
+.select-box .option-list > li {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0 12px; 
+    height: 36px;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center; 
+    overflow: hidden; 
+    white-space: nowrap; 
+    text-overflow: ellipsis; 
+    word-break: break-all; 
+    transition: all .25s;
+}
+
+.select-box .option-list > li:hover {
+    background: blue;
+}
+
+.select-box .option-list > li.on a {
+    color: pink;
+}
+
+.select-box .option-list > li a {
+    color: black;
+}
 
 /* 데이트피커 Daterangepicker */
 
 /* 모달 Modal */
 
 /* 탭 메뉴 Tab Menu */
+.tab-menu {
+    width: 100%;
+}
+.tab-menu .tab-list {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.4rem;
+    margin-bottom: 2rem;
+}
+.tab-menu .tab-list li {
+    padding: 0.6rem 1.6rem;
+    border-radius: 3rem;
+    border: 1px solid #F0F0F0;
+    background: #fff;
+}
+.tab-menu .tab-list li.on {
+    background: #1A4298;
+}
+.tab-menu .tab-list li.on a {
+    color: #fff;
+    font-weight: 700;
+}
+.tab-menu .tab-list li a {
+    width: 100%;
+    font-size: 1.5rem;
+    color: #555;
+    text-align: center;
+}
+.tab-menu .tab-cont > div {
+    width: 100%;
+    height: 100%;
+    min-height: 50rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: stretch;
+    border-radius: 0.4rem;
+    background: #fff;
+    display: none;
+}
+.tab-menu .tab-cont > div.tab-panel01 {
+    background: pink;
+}
+.tab-menu .tab-cont > div.tab-panel02 {
+    background: gold;
+}
+.tab-menu .tab-cont > div.tab-panel03 {
+    background: green;
+}
+.tab-menu .tab-cont > div.tab-panel04 {
+    background: skyblue;
+}
+.tab-menu .tab-cont > div.on {
+    display: flex;
+}
 
 /* 치아 Teeth */
 

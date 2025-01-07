@@ -3,13 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- css -->
-    <link rel="stylesheet" href="./assets/css/reset.css">
-    <link rel="stylesheet" href="./assets/css/font.css">
-    <link rel="stylesheet" href="./assets/css/style_guide.css">
+    <title>스타일 가이드</title>
     <!-- jquery -->
     <script src="./assets/js/jquery-3.7.1.min.js"></script>
-    <title>스타일 가이드</title>
+    <!-- swiper -->
+    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css">
+    <script src="./assets/js/swiper-bundle.min.js"></script>
+    <!-- daterangepicker -->
+    <link rel="stylesheet" href="./assets/css/daterangepicker.css">
+    <script src="./assets/js/moment.min.js"></script>
+    <script src="./assets/js/daterangepicker.js"></script>
+    <!-- 로컬소스 -->
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/font.css">
+    <link rel="stylesheet" href="./assets/css/common.css">
+    <link rel="stylesheet" href="./assets/css/style_guide.css">
+    <script src="./assets/js/common.js"></script>
 </head>
 <body>
     <div id="wrapper">
@@ -18,291 +27,146 @@
                 <h3>가이드 탭</h3>
                 <div>
                     <ul class="tab-area">
-                        <li><a href="javascript:void(0)">1. Lnb</a></li>
-                        <li><a href="javascript:void(0)">2. Input / Select</a></li>
+                        <li><a href="javascript:void(0)">1. Button</a></li>
+                        <li><a href="javascript:void(0)">2. Input</a></li>
+                        <li><a href="javascript:void(0)">3. Select</a></li>
+                        <li><a href="javascript:void(0)">4. Daterangepicker</a></li>
+                        <li><a href="javascript:void(0)">5. Modal</a></li>
+                        <li><a href="javascript:void(0)">6. Tab Menu</a></li>
                     </ul>
                 </div>
             </section>
             <section class="con-box">
-                <h3>1. Lnb</h3>
+                <h3>1. Button</h3>
                 <div class="module-wrap">
                     <div>
-                        <strong>Lnb</strong>
-                        <p>: class명에 따라 아이콘 변경</p>
+                        <strong>Button</strong>
+                        <!-- <p>: class명에 따라 아이콘 변경</p> -->
                     </div>
                     <ul>
                         <li>
                             <div class="flex-type01">
-                                <nav class="lnb">
-                                    <div class="inner">
-                                        <ul>
-                                            <li class="on">
-                                                <button class="layout-control-btn" type="button"></button>
-                                                <span class="tooltip" aria-label="Layout Control" tabindex="0"></span>
-                                            </li>
-                                            <li>
-                                                <button class="metar-btn" type="button"></button>
-                                                <span class="tooltip" aria-label="Metar" tabindex="0"></span>
-                                            </li>
-                                            <li>
-                                                <button class="flight-plan-btn" type="button"></button>
-                                                <span class="tooltip" aria-label="Flight Plan Information" tabindex="0"></span>
-                                            </li>
-                                            <li>
-                                                <button class="calendar-btn" type="button"></button>
-                                                <span class="tooltip" aria-label="Calendar" tabindex="0"></span>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </nav>
-                                <nav class="lnb">
-                                    <div class="inner">
-                                        <ul>
-                                            <li class="on">
-                                                <button class="vertiport-btn" type="button"></button>
-                                                <span class="tooltip" aria-label="Vertiport" tabindex="0"></span>
-                                            </li>
-                                            <li>
-                                                <button class="flight-plan-btn" type="button"></button>
-                                                <span class="tooltip" aria-label="Flight Plan Information" tabindex="0"></span>
-                                            </li>
-                                            <li>
-                                                <button class="track-btn" type="button"></button>
-                                                <span class="tooltip" aria-label="Track" tabindex="0"></span>
-                                            </li>
-                                            <li>
-                                                <button class="vtg-btn" type="button"></button>
-                                                <span class="tooltip" aria-label="Virtual Traffic Generator" tabindex="0"></span>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </nav>
-                                <nav class="lnb">
-                                    <div class="inner">
-                                        <ul>
-                                            <li class="on">
-                                                <button class="flight-plan-btn" type="button"></button>
-                                                <span class="tooltip" aria-label="Flight Plan Information" tabindex="0"></span>
-                                            </li>
-                                            <li>
-                                                <button class="flight-btn" type="button"></button>
-                                                <span class="tooltip" aria-label="Flight" tabindex="0"></span>
-                                            </li>
-                                            <li>
-                                                <button class="vertiport-btn" type="button"></button>
-                                                <span class="tooltip" aria-label="Vertiport" tabindex="0"></span>
-                                            </li>
-                                            <li>
-                                                <button class="dman-panel-btn" type="button"></button>
-                                                <span class="tooltip" aria-label="Dman Panel" tabindex="0"></span>
-                                            </li>
-                                            <li>
-                                                <button class="estrip-panel-btn" type="button"></button>
-                                                <span class="tooltip" aria-label="Estrip Panel" tabindex="0"></span>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </nav>
-                                <nav class="lnb">
-                                    <div class="inner">
-                                        <ul>
-                                            <li class="on">
-                                                <button class="flight-plan-btn" type="button"></button>
-                                                <span class="tooltip" aria-label="Flight Plan Information" tabindex="0"></span>
-                                            </li>
-                                            <li>
-                                                <button class="flight-history-btn" type="button"></button>
-                                                <span class="tooltip" aria-label="Flight History" tabindex="0"></span>
-                                            </li>
-                                            <li>
-                                                <button class="calendar-btn" type="button"></button>
-                                                <span class="tooltip" aria-label="Calendar" tabindex="0"></span>
-                                            </li>
-                                            <li>
-                                                <button class="information-btn" type="button"></button>
-                                                <span class="tooltip" aria-label="Information" tabindex="0"></span>
-                                            </li>
-                                            <li>
-                                                <button class="route-analysis-btn" type="button"></button>
-                                                <span class="tooltip" aria-label="Route Analysis" tabindex="0"></span>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </nav>
-                                <nav class="lnb">
-                                    <div class="inner">
-                                        <ul>
-                                            <li class="on">
-                                                <button class="dashboard-btn" type="button"></button>
-                                                <span class="tooltip" aria-label="Dashboard" tabindex="0"></span>
-                                            </li>
-                                            <li>
-                                                <button class="calendar-btn" type="button"></button>
-                                                <span class="tooltip" aria-label="Calendar" tabindex="0"></span>
-                                            </li>
-                                            <li>
-                                                <button class="flight-plan-btn" type="button"></button>
-                                                <span class="tooltip" aria-label="Flight Plan Information" tabindex="0"></span>
-                                            </li>
-                                            <li>
-                                                <button class="support-info-check-btn" type="button"></button>
-                                                <span class="tooltip" aria-label="Support Info Check" tabindex="0"></span>
-                                            </li>
-                                            <li>
-                                                <button class="flight-map-btn" type="button"></button>
-                                                <span class="tooltip" aria-label="Flight Map" tabindex="0"></span>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </nav>
-                                <nav class="lnb">
-                                    <div class="inner">
-                                        <ul>
-                                            <li class="on">
-                                                <button class="parts-management-btn" type="button"></button>
-                                                <span class="tooltip" aria-label="Parts Management" tabindex="0"></span>
-                                            </li>
-                                            <li>
-                                                <button class="total-maintenance-schedule-btn" type="button"></button>
-                                                <span class="tooltip" aria-label="Total Maintenance Schedule" tabindex="0"></span>
-                                            </li>
-                                            <li>
-                                                <button class="defer-manamgent-btn" type="button"></button>
-                                                <span class="tooltip" aria-label="Defer Manamgent" tabindex="0"></span>
-                                            </li>
-                                            <li>
-                                                <button class="db-setting-btn" type="button"></button>
-                                                <span class="tooltip" aria-label="Db Setting" tabindex="0"></span>
-                                            </li>
-                                            <li>
-                                                <button class="ramp-control-btn" type="button"></button>
-                                                <span class="tooltip" aria-label="Ramp Control" tabindex="0"></span>
-                                            </li>
-                                            <li>
-                                                <button class="am-report-btn" type="button"></button>
-                                                <span class="tooltip" aria-label="Am Report" tabindex="0"></span>
-                                            </li>
-                                            <li>
-                                                <button class="report-btn" type="button"></button>
-                                                <span class="tooltip" aria-label="Report" tabindex="0"></span>
-                                            </li>
-                                            <li>
-                                                <button class="rate-review-btn" type="button"></button>
-                                                <span class="tooltip" aria-label="Rate Review" tabindex="0"></span>
-                                            </li>
-                                            <li>
-                                                <button class="flight-process-btn" type="button"></button>
-                                                <span class="tooltip" aria-label="Flight Process" tabindex="0"></span>
-                                            </li>
-                                            <li>
-                                                <button class="losa-btn" type="button"></button>
-                                                <span class="tooltip" aria-label="Losa" tabindex="0"></span>
-                                            </li>
-                                            <li>
-                                                <button class="references-btn" type="button"></button>
-                                                <span class="tooltip" aria-label="References" tabindex="0"></span>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </nav>
+                                <button type="button">로그인</button>
+                                <button type="button">정보찾기</button>
+                                <button type="button">동의</button>
+                                <button type="button" disabled>미동의</button>
                             </div>
                         </li>
                     </ul>
                 </div>
             </section>
             <section class="con-box">
-                <h3>2. Input / Select</h3>
+                <h3>2. Input</h3>
                 <div class="module-wrap">
                     <div>
                         <strong>Input</strong>
-                        <p>: range의 경우 상단,하단 아이콘 제거 후 사용 가능</p>
+                        <!-- <p>: range의 경우 상단,하단 아이콘 제거 후 사용 가능</p> -->
                     </div>
                     <ul>
                         <li>
-                            <div class="search-wrap">
-                                <input type="text" placeholder="Search For Callsign" name="callsign">
-                            </div>
-                        </li>
-                        <li>
-                            <input class="w-112" type="text" placeholder="KAL 0001" name="flight no">
-                        </li>
-                        <li>
                             <div class="input-wrap">
-                                <div class="input-field">
-                                    <input id="userName" type="text" placeholder="이메일" autocomplete="name">
-                                    <button class="clear-btn" type="button" aria-label="Clear input"></button>
-                                </div>
+                                <input type="text" placeholder="업체명을 입력해주세요." name="company name">
                             </div>
                         </li>
                         <li>
-                            <div class="input-wrap">
-                                <div class="password-field">
-                                    <input id="userPw" type="password" placeholder="비밀번호">
-                                    <button class="toggle-password" type="button"></button>
-                                </div>
+                            <div class="input-wrap search">
+                                <input type="text" placeholder="검색어를 입력해주세요." name="search">
                             </div>
                         </li>
                         <li>
-                            <div class="range-wrap">
-                                <div class="icon-wrap w-24"></div>
-                                <div class="range">
-                                    <input type="range" min="0" max="100" value="50" id="range" class="range-input" /> 
-                                </div>
-                                <div class="icon-wrap w-16"></div>
+                            <div class="input-wrap id">
+                                <input id="userName" type="text" placeholder="아이디를 입력해주세요." autocomplete="name">
+                                <button class="clear-btn" type="button" aria-label="Clear input"></button>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="input-wrap password">
+                                <input id="userPw" type="password" placeholder="비밀번호를 입력해주세요.">
+                                <button class="toggle-password" type="button"></button>
                             </div>
                         </li>
                     </ul>
                 </div>
+            </section>
+            <section class="con-box">
+                <h3>3. Select</h3>
                 <div class="module-wrap">
                     <div>
                         <strong>Select</strong>
-                        <p>: option 5개 이상일 경우 스크롤(gnb > select 스크롤 없이 전부 노출)</p>
+                        <!-- <p>: option 5개 이상일 경우 스크롤(gnb > select 스크롤 없이 전부 노출)</p> -->
                     </div>
                     <ul>
                         <li>
-                            <div>
-                                <div class="gnb">
-                                    <div class="select-box">
-                                        <button class="select-item" type="button">교통관리 비행감시</button>
-                                        <ul class="option-list">
-                                            <li><a href="javascript:void(0)">운항통제 비행감시</a></li>
-                                            <li><a href="javascript:void(0)">운항통제 비행계획</a></li>
-                                            <li class="on"><a href="javascript:void(0)">교통관리 비행감시</a></li>
-                                            <li><a href="javascript:void(0)">교통관리 비행계획</a></li>
-                                            <li><a href="javascript:void(0)">운항통제 3D Map</a></li>
-                                            <li><a href="javascript:void(0)">운항통제 정비,조업</a></li>
-                                        </ul>
-                                    </div>
+                            <div class="select-box">
+                                <button class="select-item" type="button">Text03</button>
+                                <ul class="option-list">
+                                    <li><a href="javascript:void(0)">Text01</a></li>
+                                    <li><a href="javascript:void(0)">Text02</a></li>
+                                    <li class="on"><a href="javascript:void(0)">Text03</a></li>
+                                    <li><a href="javascript:void(0)">Text04</a></li>
+                                    <li><a href="javascript:void(0)">Text05</a></li>
+                                    <li><a href="javascript:void(0)">Text06</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="con-box">
+                <h3>4. Daterangepicker</h3>
+                <div class="module-wrap">
+                    <div>
+                        <strong>Daterangepicker</strong>
+                        <!-- <p>: option 5개 이상일 경우 스크롤(gnb > select 스크롤 없이 전부 노출)</p> -->
+                    </div>
+                    <ul>
+                        <li>
+                            <div class="daterange-wrap">
+                                <input type="text" class="daterange" name="daterange"/>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="con-box">
+                <h3>5. Modal</h3>
+                <div class="module-wrap">
+                    <div>
+                        <strong>Modal</strong>
+                        <!-- <p>: option 5개 이상일 경우 스크롤(gnb > select 스크롤 없이 전부 노출)</p> -->
+                    </div>
+                    <ul>
+                        <li>
+                            <div class="modal-wrap">
+                                <div class="modal">
+                                    <div class="inner"></div>
                                 </div>
                             </div>
                         </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="con-box">
+                <h3>6. Tab Menu</h3>
+                <div class="module-wrap">
+                    <div>
+                        <strong>Tab Menu</strong>
+                        <!-- <p>: option 5개 이상일 경우 스크롤(gnb > select 스크롤 없이 전부 노출)</p> -->
+                    </div>
+                    <ul>
                         <li>
-                            <div>
-                                <div class="select-box">
-                                    <button class="select-item" type="button">Text03</button>
-                                    <ul class="option-list">
-                                        <li><a href="javascript:void(0)">Text01</a></li>
-                                        <li><a href="javascript:void(0)">Text02</a></li>
-                                        <li class="on"><a href="javascript:void(0)">Text03</a></li>
-                                        <li><a href="javascript:void(0)">Text04</a></li>
-                                        <li><a href="javascript:void(0)">Text05</a></li>
-                                        <li><a href="javascript:void(0)">Text06</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div>
-                                <div class="select-box type01">
-                                    <button class="select-item" type="button">Text03</button>
-                                    <ul class="option-list">
-                                        <li><a href="javascript:void(0)">Text01</a></li>
-                                        <li><a href="javascript:void(0)">Text02</a></li>
-                                        <li class="on"><a href="javascript:void(0)">Text03</a></li>
-                                        <li><a href="javascript:void(0)">Text04</a></li>
-                                        <li><a href="javascript:void(0)">Text05</a></li>
-                                        <li><a href="javascript:void(0)">Text06</a></li>
-                                    </ul>
+                            <div class="tab-menu">
+                                <ul class="tab-list" role="tablist">
+                                    <li class="tab01 on" role="tab" aria-controls="tab-panel01"><a href="javascript:void(0)">탭 메뉴1</a></li>
+                                    <li class="tab02" role="tab" aria-controls="tab-panel02"><a href="javascript:void(0)">탭 메뉴2</a></li>
+                                    <li class="tab03" role="tab" aria-controls="tab-panel03"><a href="javascript:void(0)">탭 메뉴3</a></li>
+                                    <li class="tab04" role="tab" aria-controls="tab-panel04"><a href="javascript:void(0)">탭 메뉴4</a></li>
+                                </ul>
+                                <div class="tab-cont">
+                                    <div class="tab-panel01 on" role="tabpanel" aria-labelledby="tab01" data-index="0"></div>
+                                    <div class="tab-panel02" role="tabpanel" aria-labelledby="tab02" data-index="1"></div>
+                                    <div class="tab-panel03" role="tabpanel" aria-labelledby="tab03" data-index="2"></div>
+                                    <div class="tab-panel04" role="tabpanel" aria-labelledby="tab04" data-index="3"></div>
                                 </div>
                             </div>
                         </li>
