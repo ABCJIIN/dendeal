@@ -28,7 +28,7 @@ $(function() {
 
     // daterangepicker
     $('.daterange').daterangepicker({
-        opens: 'left',
+        opens: 'right',
         showDropdowns: true,
         showSelectionPreview: false,
         locale: {
