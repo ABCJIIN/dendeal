@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css -->
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/font.css">
+    <link rel="stylesheet" href="./assets/css/style_guide.css">
+    <!-- jquery -->
+    <script src="./assets/js/jquery-3.7.1.min.js"></script>
+    <title>스타일 가이드</title>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="wrap" class="style-guide">
+            <section class="con-box">
+                <h3>가이드 탭</h3>
+                <div>
+                    <ul class="tab-area">
+                        <li><a href="javascript:void(0)">1. Lnb</a></li>
+                        <li><a href="javascript:void(0)">2. Input / Select</a></li>
+                    </ul>
+                </div>
+            </section>
+            <section class="con-box">
+                <h3>1. Lnb</h3>
+                <div class="module-wrap">
+                    <div>
+                        <strong>Lnb</strong>
+                        <p>: class명에 따라 아이콘 변경</p>
+                    </div>
+                    <ul>
+                        <li>
+                            <div class="flex-type01">
+                                <nav class="lnb">
+                                    <div class="inner">
+                                        <ul>
+                                            <li class="on">
+                                                <button class="layout-control-btn" type="button"></button>
+                                                <span class="tooltip" aria-label="Layout Control" tabindex="0"></span>
+                                            </li>
+                                            <li>
+                                                <button class="metar-btn" type="button"></button>
+                                                <span class="tooltip" aria-label="Metar" tabindex="0"></span>
+                                            </li>
+                                            <li>
+                                                <button class="flight-plan-btn" type="button"></button>
+                                                <span class="tooltip" aria-label="Flight Plan Information" tabindex="0"></span>
+                                            </li>
+                                            <li>
+                                                <button class="calendar-btn" type="button"></button>
+                                                <span class="tooltip" aria-label="Calendar" tabindex="0"></span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </nav>
+                                <nav class="lnb">
+                                    <div class="inner">
+                                        <ul>
+                                            <li class="on">
+                                                <button class="vertiport-btn" type="button"></button>
+                                                <span class="tooltip" aria-label="Vertiport" tabindex="0"></span>
+                                            </li>
+                                            <li>
+                                                <button class="flight-plan-btn" type="button"></button>
+                                                <span class="tooltip" aria-label="Flight Plan Information" tabindex="0"></span>
+                                            </li>
+                                            <li>
+                                                <button class="track-btn" type="button"></button>
+                                                <span class="tooltip" aria-label="Track" tabindex="0"></span>
+                                            </li>
+                                            <li>
+                                                <button class="vtg-btn" type="button"></button>
+                                                <span class="tooltip" aria-label="Virtual Traffic Generator" tabindex="0"></span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </nav>
+                                <nav class="lnb">
+                                    <div class="inner">
+                                        <ul>
+                                            <li class="on">
+                                                <button class="flight-plan-btn" type="button"></button>
+                                                <span class="tooltip" aria-label="Flight Plan Information" tabindex="0"></span>
+                                            </li>
+                                            <li>
+                                                <button class="flight-btn" type="button"></button>
+                                                <span class="tooltip" aria-label="Flight" tabindex="0"></span>
+                                            </li>
+                                            <li>
+                                                <button class="vertiport-btn" type="button"></button>
+                                                <span class="tooltip" aria-label="Vertiport" tabindex="0"></span>
+                                            </li>
+                                            <li>
+                                                <button class="dman-panel-btn" type="button"></button>
+                                                <span class="tooltip" aria-label="Dman Panel" tabindex="0"></span>
+                                            </li>
+                                            <li>
+                                                <button class="estrip-panel-btn" type="button"></button>
+                                                <span class="tooltip" aria-label="Estrip Panel" tabindex="0"></span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </nav>
+                                <nav class="lnb">
+                                    <div class="inner">
+                                        <ul>
+                                            <li class="on">
+                                                <button class="flight-plan-btn" type="button"></button>
+                                                <span class="tooltip" aria-label="Flight Plan Information" tabindex="0"></span>
+                                            </li>
+                                            <li>
+                                                <button class="flight-history-btn" type="button"></button>
+                                                <span class="tooltip" aria-label="Flight History" tabindex="0"></span>
+                                            </li>
+                                            <li>
+                                                <button class="calendar-btn" type="button"></button>
+                                                <span class="tooltip" aria-label="Calendar" tabindex="0"></span>
+                                            </li>
+                                            <li>
+                                                <button class="information-btn" type="button"></button>
+                                                <span class="tooltip" aria-label="Information" tabindex="0"></span>
+                                            </li>
+                                            <li>
+                                                <button class="route-analysis-btn" type="button"></button>
+                                                <span class="tooltip" aria-label="Route Analysis" tabindex="0"></span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </nav>
+                                <nav class="lnb">
+                                    <div class="inner">
+                                        <ul>
+                                            <li class="on">
+                                                <button class="dashboard-btn" type="button"></button>
+                                                <span class="tooltip" aria-label="Dashboard" tabindex="0"></span>
+                                            </li>
+                                            <li>
+                                                <button class="calendar-btn" type="button"></button>
+                                                <span class="tooltip" aria-label="Calendar" tabindex="0"></span>
+                                            </li>
+                                            <li>
+                                                <button class="flight-plan-btn" type="button"></button>
+                                                <span class="tooltip" aria-label="Flight Plan Information" tabindex="0"></span>
+                                            </li>
+                                            <li>
+                                                <button class="support-info-check-btn" type="button"></button>
+                                                <span class="tooltip" aria-label="Support Info Check" tabindex="0"></span>
+                                            </li>
+                                            <li>
+                                                <button class="flight-map-btn" type="button"></button>
+                                                <span class="tooltip" aria-label="Flight Map" tabindex="0"></span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </nav>
+                                <nav class="lnb">
+                                    <div class="inner">
+                                        <ul>
+                                            <li class="on">
+                                                <button class="parts-management-btn" type="button"></button>
+                                                <span class="tooltip" aria-label="Parts Management" tabindex="0"></span>
+                                            </li>
+                                            <li>
+                                                <button class="total-maintenance-schedule-btn" type="button"></button>
+                                                <span class="tooltip" aria-label="Total Maintenance Schedule" tabindex="0"></span>
+                                            </li>
+                                            <li>
+                                                <button class="defer-manamgent-btn" type="button"></button>
+                                                <span class="tooltip" aria-label="Defer Manamgent" tabindex="0"></span>
+                                            </li>
+                                            <li>
+                                                <button class="db-setting-btn" type="button"></button>
+                                                <span class="tooltip" aria-label="Db Setting" tabindex="0"></span>
+                                            </li>
+                                            <li>
+                                                <button class="ramp-control-btn" type="button"></button>
+                                                <span class="tooltip" aria-label="Ramp Control" tabindex="0"></span>
+                                            </li>
+                                            <li>
+                                                <button class="am-report-btn" type="button"></button>
+                                                <span class="tooltip" aria-label="Am Report" tabindex="0"></span>
+                                            </li>
+                                            <li>
+                                                <button class="report-btn" type="button"></button>
+                                                <span class="tooltip" aria-label="Report" tabindex="0"></span>
+                                            </li>
+                                            <li>
+                                                <button class="rate-review-btn" type="button"></button>
+                                                <span class="tooltip" aria-label="Rate Review" tabindex="0"></span>
+                                            </li>
+                                            <li>
+                                                <button class="flight-process-btn" type="button"></button>
+                                                <span class="tooltip" aria-label="Flight Process" tabindex="0"></span>
+                                            </li>
+                                            <li>
+                                                <button class="losa-btn" type="button"></button>
+                                                <span class="tooltip" aria-label="Losa" tabindex="0"></span>
+                                            </li>
+                                            <li>
+                                                <button class="references-btn" type="button"></button>
+                                                <span class="tooltip" aria-label="References" tabindex="0"></span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </nav>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="con-box">
+                <h3>2. Input / Select</h3>
+                <div class="module-wrap">
+                    <div>
+                        <strong>Input</strong>
+                        <p>: range의 경우 상단,하단 아이콘 제거 후 사용 가능</p>
+                    </div>
+                    <ul>
+                        <li>
+                            <div class="search-wrap">
+                                <input type="text" placeholder="Search For Callsign" name="callsign">
+                            </div>
+                        </li>
+                        <li>
+                            <input class="w-112" type="text" placeholder="KAL 0001" name="flight no">
+                        </li>
+                        <li>
+                            <div class="input-wrap">
+                                <div class="input-field">
+                                    <input id="userName" type="text" placeholder="이메일" autocomplete="name">
+                                    <button class="clear-btn" type="button" aria-label="Clear input"></button>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="input-wrap">
+                                <div class="password-field">
+                                    <input id="userPw" type="password" placeholder="비밀번호">
+                                    <button class="toggle-password" type="button"></button>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="range-wrap">
+                                <div class="icon-wrap w-24"></div>
+                                <div class="range">
+                                    <input type="range" min="0" max="100" value="50" id="range" class="range-input" /> 
+                                </div>
+                                <div class="icon-wrap w-16"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="module-wrap">
+                    <div>
+                        <strong>Select</strong>
+                        <p>: option 5개 이상일 경우 스크롤(gnb > select 스크롤 없이 전부 노출)</p>
+                    </div>
+                    <ul>
+                        <li>
+                            <div>
+                                <div class="gnb">
+                                    <div class="select-box">
+                                        <button class="select-item" type="button">교통관리 비행감시</button>
+                                        <ul class="option-list">
+                                            <li><a href="javascript:void(0)">운항통제 비행감시</a></li>
+                                            <li><a href="javascript:void(0)">운항통제 비행계획</a></li>
+                                            <li class="on"><a href="javascript:void(0)">교통관리 비행감시</a></li>
+                                            <li><a href="javascript:void(0)">교통관리 비행계획</a></li>
+                                            <li><a href="javascript:void(0)">운항통제 3D Map</a></li>
+                                            <li><a href="javascript:void(0)">운항통제 정비,조업</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <div class="select-box">
+                                    <button class="select-item" type="button">Text03</button>
+                                    <ul class="option-list">
+                                        <li><a href="javascript:void(0)">Text01</a></li>
+                                        <li><a href="javascript:void(0)">Text02</a></li>
+                                        <li class="on"><a href="javascript:void(0)">Text03</a></li>
+                                        <li><a href="javascript:void(0)">Text04</a></li>
+                                        <li><a href="javascript:void(0)">Text05</a></li>
+                                        <li><a href="javascript:void(0)">Text06</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <div class="select-box type01">
+                                    <button class="select-item" type="button">Text03</button>
+                                    <ul class="option-list">
+                                        <li><a href="javascript:void(0)">Text01</a></li>
+                                        <li><a href="javascript:void(0)">Text02</a></li>
+                                        <li class="on"><a href="javascript:void(0)">Text03</a></li>
+                                        <li><a href="javascript:void(0)">Text04</a></li>
+                                        <li><a href="javascript:void(0)">Text05</a></li>
+                                        <li><a href="javascript:void(0)">Text06</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+    </div>
+    <script>
+        // 탭
+        $('.tab-area li a').on('click', function () {
+            let index = $(this).closest('li').index() + 1;
+            let conBox = $('section.con-box');
+
+            $('html, body').animate({
+                scrollTop: conBox.eq(index).offset().top
+            }, 500);
+        });
+    </script>
+</body>
+</html>

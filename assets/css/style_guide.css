@@ -1,0 +1,116 @@
+/* style_guide.html에서만 사용하는 css입니다 */
+
+.style-guide {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background: #E4E4EB;
+}
+
+.style-guide > .con-box {
+    width: calc(100% - 4rem);
+    max-width: 1440px;
+    padding: 4rem 0;
+    margin: 0 auto;
+    position: relative;
+}
+
+.style-guide .con-box > h3 {
+    width: 100%;
+    display: block;
+    padding: 15px;
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    border-radius: 4px;
+    background: #06070B;
+}
+
+.style-guide .con-box > div {
+    padding: 2rem;
+    margin-top: 4rem;
+    border-radius: 4px;
+    border: 3px solid #141724;
+}
+
+.style-guide .con-box .tab-area {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.style-guide .con-box .tab-area > li {
+    width: 100%;
+}
+
+.style-guide .con-box .tab-area > li > a {
+    display: block;
+    width: 100%;
+    padding: 15px 0;
+    font-size: 25px;
+    font-weight: 700;
+    border-radius: 30px;
+    text-align: center;
+    background: #E8F3FF;
+    color: #303957;
+}
+
+.style-guide .con-box .module-wrap > div {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    gap: 5px;
+}
+
+.style-guide .con-box .module-wrap > div > strong {
+    font-size: 25px;
+    font-weight: 500;
+    color: #303957;
+}
+
+.style-guide .con-box .module-wrap > div > p {
+    font-size: 16px;
+    color: #FF2E4D;
+}
+
+.style-guide .con-box .module-wrap > ul {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.style-guide .con-box .module-wrap > ul .flex-type01 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+
+.style-guide .con-box .module-wrap > ul .flex-type02 {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.style-guide .quick-menu {
+    position: fixed;
+    top: 4rem;
+    left: calc(50% + 900px);
+    transform: translateX(-50%);
+    padding: 20px;
+    border-radius: 4px;
+    background: #141724;
+    z-index: 1;
+}
+
+.style-guide .quick-menu > strong {
+    font-size: 20px;
+    font-weight: 700;
+    color: #303957;
+}
+
+/* Floating */
+.float-box {
+    align-items: flex-start;
+}
