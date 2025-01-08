@@ -161,7 +161,7 @@ button {
 }
 .tab-menu .tab-list li.on {
     /* background: #1A4298; */
-    border-bottom: 1px solid #0064FA;
+    border-bottom: 5px solid #0064FA;
 }
 .tab-menu .tab-list li.on a {
     color: #292A2D;
@@ -169,7 +169,7 @@ button {
 }
 .tab-menu .tab-list li a {
     width: 100%;
-    font-size: 1.8rem;
+    font-size: 2.1rem;
     color: #70737C;
     text-align: center;
 }
