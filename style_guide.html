@@ -137,15 +137,12 @@
                         <strong>Modal</strong>
                         <!-- <p>: option 5개 이상일 경우 스크롤(gnb > select 스크롤 없이 전부 노출)</p> -->
                     </div>
-                    <ul>
-                        <li>
-                            <div class="modal-wrap">
-                                <div class="modal">
-                                    <div class="inner"></div>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
+                    <div class="btn-wrap">
+                        <button type="button">기본 팝업</button>
+                        <button type="button">즐겨찾기 팝업</button>
+                        <button type="button">옵션리스트 팝업</button>
+                        <button type="button">거래처관리 상세페이지 팝업</button>
+                    </div>
                 </div>
             </section>
             <section class="con-box">
@@ -194,8 +191,24 @@
                         <strong>Pagination</strong>
                         <!-- <p>: option 5개 이상일 경우 스크롤(gnb > select 스크롤 없이 전부 노출)</p> -->
                     </div>
-                    <div>
-                        페이지네이션
+                    <div class="pagination">
+                        <div class="pagination-inner">
+                            <div class="arrow-group">
+                                <button class="btn-first" type="button"></button>
+                                <button class="btn-prev" type="button"></button>
+                            </div>
+                            <div class="pagenum-group">
+                                <button type="button">1</button>
+                                <button type="button">2</button>
+                                <button type="button">3</button>
+                                <button type="button">4</button>
+                                <button type="button">5</button>
+                            </div>
+                            <div class="arrow-group">
+                                <button class="btn-next" type="button"></button>
+                                <button class="btn-last" type="button"></button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
