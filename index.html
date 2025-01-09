@@ -35,191 +35,159 @@
         <div id="wrap">
             <section class="sec01">
                 <div class="inner">
-                    <ul>
-                        <li>
-                            <div class="tab-menu">
-                                <ul class="tab-list" role="tablist">
-                                    <li class="tab01 on" role="tab" aria-controls="tab-panel01"><a href="javascript:void(0)">주문</a></li>
-                                    <li class="tab02" role="tab" aria-controls="tab-panel02"><a href="javascript:void(0)">목록</a></li>
-                                    <li class="tab03" role="tab" aria-controls="tab-panel03"><a href="javascript:void(0)">제조사</a></li>
-                                    <li class="tab04" role="tab" aria-controls="tab-panel04"><a href="javascript:void(0)">거래명세서</a></li>
-                                </ul>
-                                <div class="tab-cont">
-                                    <div class="tab-panel01 on" role="tabpanel" aria-labelledby="tab01" data-index="0">
-                                        <div class="inner">
-                                            <div class="title">
-                                                <strong>주문정보</strong>
-                                                <span>주문번호 : 20241212A</span>
+                    <div class="tab-menu">
+                        <ul class="tab-list" role="tablist">
+                            <li class="tab01 on" role="tab" aria-controls="tab-panel01"><a href="javascript:void(0)">주문</a></li>
+                            <li class="tab02" role="tab" aria-controls="tab-panel02"><a href="javascript:void(0)">목록</a></li>
+                            <li class="tab03" role="tab" aria-controls="tab-panel03"><a href="javascript:void(0)">제조사</a></li>
+                            <li class="tab04" role="tab" aria-controls="tab-panel04"><a href="javascript:void(0)">거래명세서</a></li>
+                        </ul>
+                        <div class="tab-cont">
+                            <div class="tab-panel01 on" role="tabpanel" aria-labelledby="tab01" data-index="0">
+                                <div class="inner">
+                                    <div class="title">
+                                        <strong>주문정보</strong>
+                                        <span>주문번호 : 20241212A</span>
+                                    </div>
+                                    <div class="contents">
+                                        <div class="top">
+                                            <div class="patient-info">
+                                                <strong>1번째 환자 정보</strong>
+                                                <ul>
+                                                    <li>
+                                                        <div class="input-wrap">
+                                                            <label for="patient">환자명</label>
+                                                            <input id="patient" type="text" placeholder="환자명을 입력해주세요.">
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="select-box">
+                                                            <button class="select-item" type="button">병원을 선택해주세요.</button>
+                                                            <ul class="option-list">
+                                                                <li><a href="javascript:void(0)">이바른치과교정과치과의원</a></li>
+                                                                <li><a href="javascript:void(0)">연세세브란스치과의원 검단</a></li>
+                                                                <li class="on"><a href="javascript:void(0)">현치과의원</a></li>
+                                                                <li><a href="javascript:void(0)">행복드림치과의원</a></li>
+                                                                <li><a href="javascript:void(0)">세계로치과의원</a></li>
+                                                                <li><a href="javascript:void(0)">한결치과</a></li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="input-wrap">
+                                                            <label for="hospital">병원</label>
+                                                            <input type="text" placeholder="병원을 입력해주세요.">
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <button class="toggle-btn" type="button"></button>
+                                                    </li>
+                                                </ul>
                                             </div>
-                                            <div class="contents">
-                                                <div class="left">
-                                                    <div class="info">
-                                                        <div class="inner">
-                                                            <div class="top">
-                                                                <strong>환자 정보</strong>
-                                                                <button class="toggle-btn" type="button"></button>
-                                                            </div>
-                                                            <div class="bottom">
-                                                                <div class="inner">
-                                                                    <div class="input-wrap">
-                                                                        <label for="patient">환자명</label>
-                                                                        <input id="patient" type="text" placeholder="환자명을 입력해주세요.">
-                                                                    </div>
-                                                                    <div class="input-wrap">
-                                                                        <label for="hospital">병원</label>
-                                                                        <input type="text" placeholder="병원을 입력해주세요.">
-                                                                    </div>
-                                                                </div>
-                                                            </div>
+                                            <div class="detail-info">
+                                                <div class="teeth-wrap">
+                                                    <div class="pick">
+                                                        <div class="sub-tit">
+                                                            <strong>치아 선택</strong>
+                                                        </div>
+                                                        <div class="img-wrap">
+                                                            <div id="teethImg"></div>
                                                         </div>
                                                     </div>
-                                                    <div class="work">
+                                                    <div class="pick-detail">
                                                         <div class="inner">
-                                                            <div class="top">
-                                                                <strong>작업 선택</strong>
-                                                                <button class="toggle-btn" type="button"></button>
-                                                            </div>
-                                                            <div class="bottom">
-                                                                <div class="inner">
-                                                                    <div class="list-wrap">
-                                                                        <ul>
-                                                                            <li>
-                                                                                <div>
-                                                                                    <input type="checkbox">
-                                                                                </div>
-                                                                                <div>
-                                                                                    CNC
-                                                                                </div>
-                                                                                <div>
-                                                                                    <span>작업가능 수량</span>
-                                                                                    <span>10</span>
-                                                                                </div>
-                                                                                <div>
-                                                                                    너네동네CNC
-                                                                                </div>
-                                                                                <div>
-                                                                                    <button type="button">업체변경</button>
-                                                                                </div>
-                                                                            </li>
-                                                                            <li>
-                                                                                <div>
-                                                                                    <input type="checkbox">
-                                                                                </div>
-                                                                                <div>
-                                                                                    환봉
-                                                                                </div>
-                                                                                <div>
-                                                                                    <span>작업가능 수량</span>
-                                                                                    <span>2</span>
-                                                                                </div>
-                                                                                <div>
-                                                                                    너네동네CNC
-                                                                                </div>
-                                                                                <div>
-                                                                                    <button type="button">업체변경</button>
-                                                                                </div>
-                                                                            </li>
-                                                                            <li>
-                                                                                <div>
-                                                                                    <input type="checkbox">
-                                                                                </div>
-                                                                                <div>
-                                                                                    캡코핑핑
-                                                                                </div>
-                                                                                <div>
-                                                                                    <span>작업가능 수량</span>
-                                                                                    <span>10</span>
-                                                                                </div>
-                                                                                <div>
-                                                                                    너네동네CNC
-                                                                                </div>
-                                                                                <div>
-                                                                                    <button type="button">업체변경</button>
-                                                                                </div>
-                                                                            </li>
-                                                                            <li>
-                                                                                <div>
-                                                                                    <input type="checkbox">
-                                                                                </div>
-                                                                                <div>
-                                                                                    파샬
-                                                                                </div>
-                                                                                <div>
-                                                                                    <p>
-                                                                                        등록된 업체가 없습니다.
-                                                                                    </p>
-                                                                                </div>
-                                                                            </li>
-                                                                        </ul>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="teeth">
-                                                        <div class="inner">
-                                                            <div class="top">
-                                                                <strong>치아 선택</strong>
-                                                                <button class="toggle-btn" type="button"></button>
-                                                            </div>
-                                                            <div class="bottom">
-                                                                <div class="inner">
-                                                                    <div class="select">성인치아</div>
-                                                                    <div class="teeth-detial">
-                                                                        <div class="img-wrap">
-                                                                            치아 이미지
-                                                                        </div>
-                                                                        <div class="info-wrap">
-                                                                            <div class="input-wrap">
-                                                                                <label for="toothNum">치식번호</label>
-                                                                                <input id="toothNum" type="text">
-                                                                            </div>
-                                                                            <div class="input-wrap">
-                                                                                <label for="brandName">브랜드명/사이즈</label>
-                                                                                <input id="brandName" type="text" placeholder="브랜드명/사이즈를 입력해주세요.">
-                                                                            </div>
-                                                                            <div class="input-wrap">
-                                                                                <label for="memo">메모</label>
-                                                                                <textarea name="memo" id="memo" placeholder="전달사항을 입력해주세요."></textarea>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
+                                                            <ul>
+                                                                <li>
+                                                                    <div class="num">1</div>
+                                                                    <div class="teeth-info"></div>
+                                                                </li>
+                                                                <li>
+                                                                    <div class="num">2</div>
+                                                                    <div class="teeth-info"></div>
+                                                                </li>
+                                                                <li>
+                                                                    <div class="num">3</div>
+                                                                    <div class="teeth-info"></div>
+                                                                </li>
+                                                            </ul>
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="right">
-                                                    <div class="inner">
-                                                        <ul>
-                                                            <li class="on">
-                                                                <span>Step1</span>
-                                                                <span>환자정보</span>
-                                                            </li>
-                                                            <li>
-                                                                <span>Step2</span>
-                                                                <span>작업선택</span>
-                                                            </li>
-                                                            <li>
-                                                                <span>Step3</span>
-                                                                <span>치아선택</span>
-                                                            </li>
-                                                        </ul>
+                                                <div class="etc-wrap">
+                                                    <div>
+                                                        <div class="sub-tit">
+                                                            <strong>기공소 선택</strong>
+                                                        </div>
+                                                        <div class="list-wrap">
+                                                            <ul>
+                                                                <li></li>
+                                                                <li></li>
+                                                                <li></li>
+                                                                <li></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <div class="sub-tit">
+                                                            <strong>의뢰 파일</strong>
+                                                        </div>
+                                                        <div class="file-wrap">
+                                                            <ul>
+                                                                <li></li>
+                                                                <li></li>
+                                                                <li></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <div class="sub-tit">
+                                                            <strong>메모</strong>
+                                                        </div>
+                                                        <div class="memo-wrap">
+                                                            <textarea name="" id="" placeholder="전달사항을 입력해주세요."></textarea>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
+                                        <div class="bottom">
+                                            <div class="order-info">
+                                                <ul>
+                                                    <li></li>
+                                                    <li></li>
+                                                    <li></li>
+                                                    <li></li>
+                                                    <li></li>
+                                                </ul>
+                                            </div>
+                                            <div class="total">
+                                                <button type="button">환자 추가</button>
+                                                <div>
+                                                    <strong>전체<span>40</span>건</strong>
+                                                    <button type="button">작업주문</button>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="tab-panel02" role="tabpanel" aria-labelledby="tab02" data-index="1"></div>
-                                    <div class="tab-panel03" role="tabpanel" aria-labelledby="tab03" data-index="2"></div>
-                                    <div class="tab-panel04" role="tabpanel" aria-labelledby="tab04" data-index="3"></div>
                                 </div>
                             </div>
-                        </li>
-                    </ul>
+                            <div class="tab-panel02" role="tabpanel" aria-labelledby="tab02" data-index="1"></div>
+                            <div class="tab-panel03" role="tabpanel" aria-labelledby="tab03" data-index="2"></div>
+                            <div class="tab-panel04" role="tabpanel" aria-labelledby="tab04" data-index="3"></div>
+                        </div>
+                    </div>
                 </div>
             </section>
         </div>
     </div>
+    <!-- <script>
+        $(document).ready(function() {
+            // 모든 치아 요소를 선택
+            $('.teeth').on('click', function() {
+                // 이미 선택된 상태를 초기화
+                $('.tooth').removeClass('on');
+                // 선택한 치아에만 selected 클래스 추가
+                $(this).toggleClass('on');
+            });
+        });
+    </script> -->
 </body>
 </html>

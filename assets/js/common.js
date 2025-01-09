@@ -75,4 +75,23 @@ $(function() {
         });
     });
     
+    // SVG 파일을 동적으로 로드
+    // 치아 선택택
+    $("#teethImg").load("final_teeth.svg", function () {
+        console.log("SVG Loaded");
+
+        // 삽입된 SVG 내의 .tooth 요소 선택 및 이벤트 추가
+        $("#teethImg").on("click", ".teeth", function () {
+            // 모든 .tooth 클래스에서 'on' 제거
+            $(".tooth").removeClass("on");
+
+            // 클릭된 .tooth 클래스에 'on' 추가
+            $(this).toggleClass("on");
+
+            // 디버깅용: 클릭된 요소 출력
+            console.log("Clicked tooth:", $(this));
+        });
+    });
+
+
 });
