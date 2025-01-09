@@ -46,6 +46,43 @@ button {
 	3-8.이미지 업로드(덴톡 메세지 입력창 좌측 참고)
 ) */
 
+/* Input checkbox */
+input[type="checkbox"] + label {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    padding-left: 3rem;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #333;
+    cursor: pointer;
+}
+
+input[type="checkbox"] + label::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 2rem;
+    height: 2rem;
+    border: 1.5px solid #b8b8b8;
+    border-radius: 50%;
+    background: #fff;
+    transition: all 0.2s ease;
+}
+
+input[type="checkbox"]:checked + label::before {
+    background: #336dff;
+    border-color: #336dff;
+}
+
+input[type="checkbox"]:focus-visible + label::before {
+    outline: 2px solid black;   
+    outline-offset: 2px;
+}
+
 /* 드롭다운 Select */
 .select-box {
     position: relative;
@@ -145,7 +182,7 @@ button {
 .tab-menu .tab-list {
     position: relative;
     width: 100%;
-    padding: 0 6rem;
+    /* padding: 0 6rem; */
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -169,7 +206,8 @@ button {
 }
 .tab-menu .tab-list li a {
     width: 100%;
-    font-size: 2.1rem;
+    font-size: 1.6rem;
+    font-weight: 500;
     color: #70737C;
     text-align: center;
 }
